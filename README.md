@@ -77,3 +77,20 @@ consumer.Received += (object sender ,BasicDeliverEventArgs e) =>
 };
 Console.ReadLine();
 ```
+
+- Mesajlara erişim kıstasları
+```csharp
+//prefetchSize : mesaj boyutu (0 : herhangi bir boyuttaki mesaj)
+//prefetchCount : mesajlar tüketicilere kaçar kaçar gönderilecek.
+//global :  toplamda tüm kullanıcılara kaçar kaçar gönderilecek. 3 consumer ve 6 mesaj için her consumer'a ikişer tane mesaj gönderir.
+channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+```
+
+
+- işlemin kuyruktan silinmesi için haber yolluyoruz. 
+
+```csharp
+//deliveryTag : gelen mesajın adresi
+//multiple : eğer kuyrukta işlem tamamlanmış fakat silinmemiş işlemler var ise onları siler.
+channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false); 
+```
