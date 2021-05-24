@@ -41,6 +41,7 @@ Console.ReadLine();
 //bir bağlantı üzerinden birden fazla kanal oluşturabiliriz.
 ```
 
+
 - Consumer
 
 ```csharp
@@ -78,6 +79,7 @@ consumer.Received += (object sender ,BasicDeliverEventArgs e) =>
 Console.ReadLine();
 ```
 
+
 - Mesajlara erişim kıstasları
 ```csharp
 //prefetchSize : mesaj boyutu (0 : herhangi bir boyuttaki mesaj)
@@ -94,3 +96,34 @@ channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 //multiple : eğer kuyrukta işlem tamamlanmış fakat silinmemiş işlemler var ise onları siler.
 channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false); 
 ```
+
+
+
+
+### EXCHANGES
+
+#### FANOUT EXCHANGE
+
+Subscriber tarafından gönderilen mesajları ilgili exchange'e bind olan tüm tüketicilere aynı ve eşit bir şekilde iletir.
+
+```csharp
+//rasgele kuyruk ismi oluşturur. isim çakışmalarını önlemek için.
+var randomQueueName = channel.QueueDeclare().QueueName;
+
+//uygulama her ayağa kalktığında bir kuyruk oluşacak.
+channel.QueueBind(queue: randomQueueName, exchange: "logs-fandout", routingKey: string.Empty, arguments: null);
+```
+
+
+Kuyruğu kalıcı hale getirmek istersek :
+
+```csharp
+//var queueName = "save-queue";
+//channel.QueueDeclare(queue: queueName, durable: true, exclusive: false, autoDelete: false);
+```
+
+
+
+#### DIRECT EXCHANGE
+
+Devam ediyor...
