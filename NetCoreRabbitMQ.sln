@@ -10,23 +10,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helloworld", "helloworld", "{E9E25C18-D00A-4FE0-A54A-EB6B925F00A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Publisher", "helloworld\HelloWorld.Publisher\HelloWorld.Publisher.csproj", "{6C08A437-875E-4E39-8AD9-901DB9E90493}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Publisher", "helloworld\HelloWorld.Publisher\HelloWorld.Publisher.csproj", "{6C08A437-875E-4E39-8AD9-901DB9E90493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Subscriber", "helloworld\HelloWorld.Subscriber\HelloWorld.Subscriber.csproj", "{68858908-DDAD-4255-B4BC-C81D4EAB88F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Subscriber", "helloworld\HelloWorld.Subscriber\HelloWorld.Subscriber.csproj", "{68858908-DDAD-4255-B4BC-C81D4EAB88F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exchanges", "exchanges", "{64FE85C6-5D34-43E3-ADA5-2C7D4C3F91FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fanoutexchange", "fanoutexchange", "{7EEAD4C1-3936-4D4A-AC61-3D4C4C0EA9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanoutExchange.Publisher", "exchanges\fanoutexchange\FanoutExchange.Publisher\FanoutExchange.Publisher.csproj", "{1FD15774-616D-4A60-ACB8-F801B5ECC336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutExchange.Publisher", "exchanges\fanoutexchange\FanoutExchange.Publisher\FanoutExchange.Publisher.csproj", "{1FD15774-616D-4A60-ACB8-F801B5ECC336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanoutExchange.Subscriber", "exchanges\fanoutexchange\FanoutExchange.Subscriber\FanoutExchange.Subscriber.csproj", "{95D361E5-1A81-4C05-959F-53F001E5A058}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutExchange.Subscriber", "exchanges\fanoutexchange\FanoutExchange.Subscriber\FanoutExchange.Subscriber.csproj", "{95D361E5-1A81-4C05-959F-53F001E5A058}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "directexchange", "directexchange", "{DF13ECE9-5B93-4FF5-8B84-D85EF55E75CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectExchange.Publisher", "exchanges\directexchange\DirectExchange.Publisher\DirectExchange.Publisher.csproj", "{4DF14A01-105E-4013-85A8-4821D1E91BA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectExchange.Publisher", "exchanges\directexchange\DirectExchange.Publisher\DirectExchange.Publisher.csproj", "{4DF14A01-105E-4013-85A8-4821D1E91BA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectExchange.Subscriber", "exchanges\directexchange\DirectExchange.Subscriber\DirectExchange.Subscriber.csproj", "{B7874AC5-D8E7-4818-80FD-15429E5F6636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectExchange.Subscriber", "exchanges\directexchange\DirectExchange.Subscriber\DirectExchange.Subscriber.csproj", "{B7874AC5-D8E7-4818-80FD-15429E5F6636}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topicexchange", "topicexchange", "{1FD846EC-3CF8-4A05-AFB1-BB7C0C15C226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Publisher", "exchanges\topicexchange\TopicExchange.Publisher\TopicExchange.Publisher.csproj", "{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Subscriber", "exchanges\topicexchange\TopicExchange.Subscriber\TopicExchange.Subscriber.csproj", "{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +64,14 @@ Global
 		{B7874AC5-D8E7-4818-80FD-15429E5F6636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7874AC5-D8E7-4818-80FD-15429E5F6636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7874AC5-D8E7-4818-80FD-15429E5F6636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +85,9 @@ Global
 		{DF13ECE9-5B93-4FF5-8B84-D85EF55E75CB} = {64FE85C6-5D34-43E3-ADA5-2C7D4C3F91FE}
 		{4DF14A01-105E-4013-85A8-4821D1E91BA2} = {DF13ECE9-5B93-4FF5-8B84-D85EF55E75CB}
 		{B7874AC5-D8E7-4818-80FD-15429E5F6636} = {DF13ECE9-5B93-4FF5-8B84-D85EF55E75CB}
+		{1FD846EC-3CF8-4A05-AFB1-BB7C0C15C226} = {64FE85C6-5D34-43E3-ADA5-2C7D4C3F91FE}
+		{7C70D05A-CA9A-4EDB-B96C-80002935ABFB} = {1FD846EC-3CF8-4A05-AFB1-BB7C0C15C226}
+		{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9} = {1FD846EC-3CF8-4A05-AFB1-BB7C0C15C226}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBF5CE94-EC56-449C-9604-90DC6C73DE40}
