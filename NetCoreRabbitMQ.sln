@@ -40,6 +40,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderExchange.Publisher", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderExchange.Subscriber", "exchanges\headerexchange\HeaderExchange.Subscriber\HeaderExchange.Subscriber.csproj", "{924B2963-C3C8-47C1-9FD4-89D2EA40C729}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{EF10CE9A-448B-4BAF-AA72-5B9E631F1DCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "watermark", "watermark", "{E37CFE24-180A-452C-932F-65C7E8C00239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatermarkApp", "samples\watermark\WatermarkApp\WatermarkApp.csproj", "{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +92,10 @@ Global
 		{924B2963-C3C8-47C1-9FD4-89D2EA40C729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{924B2963-C3C8-47C1-9FD4-89D2EA40C729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{924B2963-C3C8-47C1-9FD4-89D2EA40C729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +115,8 @@ Global
 		{ACDF97E2-B2E9-400D-8265-E2ECA1B76F04} = {64FE85C6-5D34-43E3-ADA5-2C7D4C3F91FE}
 		{F25DA578-640C-4568-99D1-4DCDC432AC24} = {ACDF97E2-B2E9-400D-8265-E2ECA1B76F04}
 		{924B2963-C3C8-47C1-9FD4-89D2EA40C729} = {ACDF97E2-B2E9-400D-8265-E2ECA1B76F04}
+		{E37CFE24-180A-452C-932F-65C7E8C00239} = {EF10CE9A-448B-4BAF-AA72-5B9E631F1DCC}
+		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF} = {E37CFE24-180A-452C-932F-65C7E8C00239}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBF5CE94-EC56-449C-9604-90DC6C73DE40}
