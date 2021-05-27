@@ -30,21 +30,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectExchange.Subscriber",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topicexchange", "topicexchange", "{1FD846EC-3CF8-4A05-AFB1-BB7C0C15C226}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Publisher", "exchanges\topicexchange\TopicExchange.Publisher\TopicExchange.Publisher.csproj", "{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicExchange.Publisher", "exchanges\topicexchange\TopicExchange.Publisher\TopicExchange.Publisher.csproj", "{7C70D05A-CA9A-4EDB-B96C-80002935ABFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicExchange.Subscriber", "exchanges\topicexchange\TopicExchange.Subscriber\TopicExchange.Subscriber.csproj", "{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicExchange.Subscriber", "exchanges\topicexchange\TopicExchange.Subscriber\TopicExchange.Subscriber.csproj", "{8EDDB07C-2B53-4009-932A-CC58FA1DDDC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "headerexchange", "headerexchange", "{ACDF97E2-B2E9-400D-8265-E2ECA1B76F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderExchange.Publisher", "exchanges\headerexchange\HeaderExchange.Publisher\HeaderExchange.Publisher.csproj", "{F25DA578-640C-4568-99D1-4DCDC432AC24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderExchange.Publisher", "exchanges\headerexchange\HeaderExchange.Publisher\HeaderExchange.Publisher.csproj", "{F25DA578-640C-4568-99D1-4DCDC432AC24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderExchange.Subscriber", "exchanges\headerexchange\HeaderExchange.Subscriber\HeaderExchange.Subscriber.csproj", "{924B2963-C3C8-47C1-9FD4-89D2EA40C729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderExchange.Subscriber", "exchanges\headerexchange\HeaderExchange.Subscriber\HeaderExchange.Subscriber.csproj", "{924B2963-C3C8-47C1-9FD4-89D2EA40C729}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{EF10CE9A-448B-4BAF-AA72-5B9E631F1DCC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "watermark", "watermark", "{E37CFE24-180A-452C-932F-65C7E8C00239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatermarkApp", "samples\watermark\WatermarkApp\WatermarkApp.csproj", "{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatermarkApp", "samples\watermark\WatermarkApp\WatermarkApp.csproj", "{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "excel", "excel", "{AFDEB6D6-16E9-4D08-B1CE-73E622DFF869}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelApp", "samples\excel\ExcelApp\ExcelApp.csproj", "{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWorkerService", "samples\excel\ExcelWorkerService\ExcelWorkerService.csproj", "{F9E54D47-681A-43E3-95DF-E5893BA794E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,6 +102,14 @@ Global
 		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E54D47-681A-43E3-95DF-E5893BA794E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E54D47-681A-43E3-95DF-E5893BA794E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E54D47-681A-43E3-95DF-E5893BA794E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E54D47-681A-43E3-95DF-E5893BA794E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +131,9 @@ Global
 		{924B2963-C3C8-47C1-9FD4-89D2EA40C729} = {ACDF97E2-B2E9-400D-8265-E2ECA1B76F04}
 		{E37CFE24-180A-452C-932F-65C7E8C00239} = {EF10CE9A-448B-4BAF-AA72-5B9E631F1DCC}
 		{1DACB93B-B477-42AC-ADF8-3E430B24FAEF} = {E37CFE24-180A-452C-932F-65C7E8C00239}
+		{AFDEB6D6-16E9-4D08-B1CE-73E622DFF869} = {EF10CE9A-448B-4BAF-AA72-5B9E631F1DCC}
+		{F1FEBCC1-1AB1-4C96-825A-88E22F4809BA} = {AFDEB6D6-16E9-4D08-B1CE-73E622DFF869}
+		{F9E54D47-681A-43E3-95DF-E5893BA794E2} = {AFDEB6D6-16E9-4D08-B1CE-73E622DFF869}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBF5CE94-EC56-449C-9604-90DC6C73DE40}
